@@ -24,7 +24,7 @@ button.forEach((btn) => {
 
 function pickComputer() {
     let computer = Math.random();
-    console.log(computer);
+    // console.log(computer);
     if (computer > 0 && computer < 1/3) {
         computerDisplay.innerHTML = 'rock'
     }else if (computer > 1/3 && computer < 2/3) {
@@ -81,8 +81,6 @@ function matchResult() {
     }
 
 
-
-
 function waitingPickComputer() {
     setTimeout(() => {
         pickComputer();
@@ -98,3 +96,4 @@ startGame.addEventListener("click", () => {
     container.classList.toggle("hidden");
 
 })
+
